@@ -1,0 +1,121 @@
+h2{
+    margin-top: -50px;
+}
+.logo{
+    display: flex;
+    justify-content:center;
+}
+.fraze{
+    display: flex;
+    justify-content:center;
+}
+.card-area {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    width:230px ;
+    min-height:200px;
+    background-color: #F7FAFC;
+    border: 1px solid #A0AEC0;
+    border-radius: 8px;
+    margin: 26px
+}
+.name {
+    display: flex;
+    justify-content:center;
+    font-weight:bold;
+    margin: 0 0 4px 0;
+}
+.job {
+    color: rgb(223, 23, 23);
+    display: flex;
+    justify-content:center;
+}
+.avatar {
+    width:230px;
+    height:250px;
+    border-radius: 0px;
+}
+.buttons {
+    display: flex;
+}
+.button{
+    flex:1;
+    text-align:center;
+    font-weight:bold;
+    padding:16px;
+}
+.card {
+    /* add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.button:hover {
+    background-color: #4A5568;
+    color: white;
+}
+.pants{
+    display: flex;
+    justify-content:center;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+body {
+    background-color:antiquewhite;
+    color:green;
+}
+/* Styling the list of items in the Nav Bar */
+nav ul {
+    display:flex;
+    flex-wrap:wrap;
+    margin:0;
+    padding:0;
+    z-index:10;
+}
+/* Styling the space of each item  */
+nav li {
+    display:flex;
+    margin:0;
+    list-style:none;
+    min-width:200px;
+    flex:1;
+    text-align:center;
+    background-color:green;
+    color:antiquewhite;
+    position:relative;
+}
+/* Styling the link, both unvisited and visited*/
+nav a, a:visited {
+    width:100%;
+    text-decoration:none;
+    padding: 8px 0px;
+    color:antiquewhite;
+}
+/*Hovering over a link AND the link that has class=active (the same page)*/
+nav a:hover, a.active {
+    color:green;
+    background-color:rgb(173, 230, 180);
+}
+.dropdown-content {
+    position:absolute;
+    top:37px;
+    width:100%;
+    display:none;
+    z-index:20;
+}
+nav li:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    font-weight:bold;
+}
+.dropdown-content ul {
+    flex-direction:column;
+}
